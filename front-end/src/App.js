@@ -6,17 +6,17 @@ import Card from "./Card";
 function App() {
   const [projects, setProjects] = useState([]);
 
-  const allCards = () => {};
+  // const allCards = () => {};
 
   return (
     <div className="App">
-      <NewForm />
       <header className="App-header">
         <h1>8.2 eCommerce Project Collection</h1>
+        <NewForm />
       </header>
 
       <div className="cards-container">
-        {allCards}
+        {/* {allCards} */}
         <Card />
         <Card />
         <Card />
