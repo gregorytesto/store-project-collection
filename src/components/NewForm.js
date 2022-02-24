@@ -27,7 +27,7 @@ function NewForm() {
   const handleClose = () => {};
 
   const handleText = (e) => {
-    setInfo(info);
+    setInfo({ ...info, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e) => {
