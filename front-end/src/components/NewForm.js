@@ -3,7 +3,7 @@ import { Modal, Button, Typography, Box, TextField } from "@mui/material";
 
 const { REACT_APP_API_URL } = process.env;
 
-function NewForm() {
+function NewForm({ fetchProjects }) {
   const [open, setOpen] = useState(false);
   const [info, setInfo] = useState({
     name: "",
@@ -60,13 +60,8 @@ function NewForm() {
     const data = await response.json();
     console.log("data", data);
 
-    if (
-      info.name &&
-      info.author &&
-      info.netlifyLink &&
-      info.gitHubLink &&
-      info.screenshot
-    ) {
+    if (info.name && info.author && info.netlifyLink && info.screenshot) {
+      fetchProjects();
       handleClose();
     }
   };
@@ -131,7 +126,6 @@ function NewForm() {
               onChange={handleText}
               className="input"
               style={{ margin: 5 }}
-              required
             />
             <TextField
               id="extraFeatures"

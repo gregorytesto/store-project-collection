@@ -35,18 +35,20 @@ const Card = ({ project }) => {
         <h4>
           <span style={{ fontWeight: "lighter" }}>BY</span>: {project.author}
         </h4>
-        <a
-          href={
-            project.gitHubLink.includes("http://") ||
-            project.gitHubLink.includes("https://")
-              ? project.gitHubLink
-              : "http://" + project.gitHubLink
-          }
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GitHubIcon className="icon" /> <h4>GitHub</h4>
-        </a>
+        {project.gitHubLink ? (
+          <a
+            href={
+              project.gitHubLink.includes("http://") ||
+              project.gitHubLink.includes("https://")
+                ? project.gitHubLink
+                : "http://" + project.gitHubLink
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon className="icon" /> <h4>GitHub</h4>
+          </a>
+        ) : null}
         <p>
           <span style={{ fontStyle: "italic", fontWeight: 500 }}>
             extra features
