@@ -49,13 +49,15 @@ const Card = ({ project }) => {
             <GitHubIcon className="icon" /> <h4>GitHub</h4>
           </a>
         ) : null}
-        <p>
-          <span style={{ fontStyle: "italic", fontWeight: 500 }}>
-            extra features
-          </span>
-          <span>: </span>
-          {project.extraFeatures}
-        </p>
+        {project.extraFeatures.length ? (
+          <p>
+            <span style={{ fontStyle: "italic", fontWeight: 500 }}>
+              extra features
+            </span>
+            <span>: </span>
+            {project.extraFeatures}
+          </p>
+        ) : null}
       </div>
     </div>
   );

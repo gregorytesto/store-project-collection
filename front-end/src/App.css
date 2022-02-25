@@ -16,12 +16,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
+  margin-bottom: 40px;
   grid-gap: 15px;
 }
 
 .card {
   background-color: ghostwhite;
   border-radius: 3px;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .card h3 {
