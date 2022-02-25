@@ -61,7 +61,7 @@ function NewForm({ fetchProjects }) {
     console.log("data", data);
 
     if (info.name && info.author && info.netlifyLink && info.screenshot) {
-      fetchProjects();
+      await fetchProjects();
       handleClose();
     }
   };
@@ -76,6 +76,8 @@ function NewForm({ fetchProjects }) {
           marginTop: 3,
           backgroundColor: "snow",
           transition: "all 0.5s ease",
+          position: "relative",
+          overflow: "hidden",
           "&:hover": {
             backgroundColor: `rgba(49, 78, 74, 0.05)`,
           },
@@ -136,7 +138,7 @@ function NewForm({ fetchProjects }) {
               style={{ margin: 5 }}
             />
             <div className="screenshot-input">
-              <label for="screenshot" class="custom-file-upload">
+              <label for="screenshot" className="custom-file-upload">
                 Upload a screenshot of your site
               </label>
               <input

@@ -12,15 +12,10 @@ function App() {
     return <Card key={project.name + i} project={project} />;
   });
 
-  const fetchProjects = () => {
-    fetch(REACT_APP_API_URL)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setProjects(data);
-      });
+  const fetchProjects = async () => {
+    const res = await fetch(REACT_APP_API_URL);
+    const data = await res.json();
+    setProjects(data);
   };
 
   useEffect(() => {

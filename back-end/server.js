@@ -9,11 +9,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("uploads"));
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "public");
+    cb(null, "uploads");
   },
   filename: function (req, file, cb) {
     console.log(file);
