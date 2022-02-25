@@ -27,8 +27,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>8.2 eCommerce Project Collection</h1>
-        <NewForm />
       </header>
+      <NewForm />
 
       <div className="cards-container">{allCards}</div>
     </div>

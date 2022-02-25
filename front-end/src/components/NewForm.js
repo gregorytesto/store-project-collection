@@ -19,11 +19,12 @@ function NewForm() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width: "50%",
     bgcolor: "background.paper",
-    border: "2px solid #000",
     boxShadow: 24,
-    p: 4,
+    textAlign: "center",
+    p: 3,
+    borderRadius: 2,
   };
 
   const handleClose = () => {
@@ -63,54 +64,102 @@ function NewForm() {
   };
 
   return (
-    <>
-      <Button onClick={() => setOpen(true)}>Add your project</Button>
+    <div className="modal">
+      <Button
+        onClick={() => setOpen(true)}
+        sx={{
+          padding: 2,
+          color: `rgba(3, 71, 62, 0.9)`,
+          marginTop: 3,
+          backgroundColor: "snow",
+          transition: "all 0.5s ease",
+          "&:hover": {
+            backgroundColor: `rgba(49, 78, 74, 0.05)`,
+          },
+        }}
+      >
+        Add your project
+      </Button>
       <Modal
         open={open}
         onClose={() => setOpen(false)}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        // aria-labelledby="modal-modal-title"
+        // aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+          <h2>Project Info Form</h2>
           <form onSubmit={handleSubmit}>
             <TextField
               id="name"
               label="Project Name"
               variant="outlined"
               onChange={handleText}
+              className="input"
+              style={{ margin: 5 }}
             />
             <TextField
               id="author"
               label="Your Name"
               variant="outlined"
               onChange={handleText}
+              className="input"
+              style={{ margin: 5 }}
             />
             <TextField
               id="netlifyLink"
               label="Deployed Netlify Link"
               variant="outlined"
               onChange={handleText}
+              className="input"
+              style={{ margin: 5 }}
             />
             <TextField
               id="gitHubLink"
               label="GitHub Link"
               variant="outlined"
               onChange={handleText}
+              className="input"
+              style={{ margin: 5 }}
             />
-
-            <input type="file" id="screenshot" onChange={handleFile} />
-
             <TextField
               id="extraFeatures"
               label="Extra Features"
               variant="outlined"
               onChange={handleText}
+              className="input"
+              style={{ margin: 5 }}
             />
-            <Button type="submit">Submit</Button>
+            <div className="screenshot-input">
+              <label for="screenshot" class="custom-file-upload">
+                Upload a screenshot of your site
+              </label>
+              <input
+                type="file"
+                id="screenshot"
+                onChange={handleFile}
+                className="input"
+              />
+            </div>
+            <Button
+              className=""
+              type="submit"
+              sx={{
+                paddingLeft: 5,
+                paddingRight: 5,
+                color: `rgba(3, 71, 62, 0.9)`,
+                margin: 1,
+                transition: "all 0.5s ease",
+                "&:hover": {
+                  backgroundColor: `rgba(49, 78, 74, 0.05)`,
+                },
+              }}
+            >
+              Submit
+            </Button>
           </form>
         </Box>
       </Modal>
-    </>
+    </div>
   );
 }
 
