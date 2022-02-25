@@ -1,36 +1,5 @@
 [
   {
-    "name": "Mushroom Store",
-    "author": "Sam"
-  },
-  {
-    "name": "Guitar Store",
-    "author": "Anthony"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg",
-    "screenshot_url": "hi"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg",
-    "screenshot_url": "hi"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg",
-    "screenshot_url": "hi"
-  },
-  {
     "name": "Photo Store",
     "author": "Greg",
     "screenshot_url": "greg-moss.jpeg"
@@ -49,5 +18,54 @@
     "name": "Photo Store",
     "author": "Greg",
     "screenshot_url": "greg-img_2761.jpg"
+  },
+
+  {
+    "name": "Module 3",
+    "author": "Sam",
+    "netlifyLink": "google.com",
+    "gitHubLink": "github.com",
+    "extraFeatures": "",
+    "screenshot_url": "sam-screen shot 2021-09-29 at 8.35.28 pm.png"
+  },
+  {
+    "name": "ORANGE",
+    "author": "Sam",
+    "netlifyLink": "google.com",
+    "gitHubLink": "github.com",
+    "extraFeatures": "",
+    "screenshot_url": "sam-screenXshotX2021-09-29XatX8.29.48Xpm.png"
+  },
+  {
+    "name": "Helloo",
+    "author": "Sam",
+    "netlifyLink": "google.com",
+    "gitHubLink": "github.com",
+    "extraFeatures": "",
+    "screenshot_url": "sam-screenshot2021-09-29at8.35.28pm.png"
+  },
+  {
+    "name": "new",
+    "author": "Sam",
+    "netlifyLink": "google.com",
+    "gitHubLink": "github.com",
+    "extraFeatures": "",
+    "screenshot_url": "sam-screenshot2021-09-27at4.59.28pm.png"
+  },
+  {
+    "name": "newnewnew",
+    "author": "Sam",
+    "netlifyLink": "google.com",
+    "gitHubLink": "github.com",
+    "extraFeatures": "",
+    "screenshot_url": "sam-screenshot2021-09-27at4.59.28pm.png"
+  },
+  {
+    "name": "Sam S.",
+    "author": "Sam",
+    "netlifyLink": "google.com",
+    "gitHubLink": "github.com",
+    "extraFeatures": "",
+    "screenshot_url": "sam-screenshot2021-09-29at8.29.48pm.png"
   }
 ]

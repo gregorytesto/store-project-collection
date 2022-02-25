@@ -14,31 +14,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
+  grid-gap: 10px;
 }
 
 .card {
-  width: 275px;
-  border: 1px solid red;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: slategray;
+  padding: 25px;
   border-radius: 3px;
 }
+
+/* .card * {
+  margin: 
+} */
 
 .screenshot {
-  width: 50%;
-  height: 125px;
-  border: 1px solid blue;
   border-radius: 3px;
   margin: 4px;
+  height: 250px;
+  background-size: cover;
+  overflow: none;
 }
 
-.name-author {
-  width: 50%;
-  height: 125px;
-  border: 1px solid green;
-  border-radius: 3px;
-  margin: 4px;
-}
-
-.card-top {
+/* .card-top {
   display: flex;
-}
+} */

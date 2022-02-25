@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
   filename: function (req, file, cb) {
     console.log(file);
     const name = req.body.author;
-    cb(null, (name + "-" + file.originalname).toLowerCase());
+    cb(null, (name + "-" + file.originalname).toLowerCase().replace(/\s/g, ""));
   },
 });
 
@@ -50,7 +50,7 @@ app.post("/", upload.single("screenshot"), (req, res, next) => {
   try {
     let dataToAdd = [
       ...readFromFile(),
-      { ...req.body, screenshot_url: req.file.filename },
+      { ...req.body, screenshot_url: req.file?.filename },
     ];
     let data = JSON.stringify(dataToAdd, null, 2);
     fs.writeFile("./data.json", data, finished);
