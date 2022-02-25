@@ -1,71 +1,26 @@
 [
   {
-    "name": "Photo Store",
+    "name": "Mushrooms!!",
+    "author": "Sam",
+    "netlifyLink": "https://southwestmushrooms.com/",
+    "gitHubLink": "github.com",
+    "extraFeatures": "shopping cart, material UI",
+    "screenshot_url": "sam-screenshot2022-02-24at10.39.58pm.png"
+  },
+  {
+    "name": "Guitars!!",
+    "author": "Anthony",
+    "netlifyLink": "https://www.gibson.com/en-US/",
+    "gitHubLink": "github.com",
+    "extraFeatures": "shopping cart, filter by category",
+    "screenshot_url": "anthony-screenshot2022-02-24at10.51.51pm.png"
+  },
+  {
+    "name": "Cameras!!",
     "author": "Greg",
-    "screenshot_url": "greg-moss.jpeg"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg",
-    "screenshot_url": "greg-moss.jpeg"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg",
-    "screenshot_url": "greg-moss.jpeg"
-  },
-  {
-    "name": "Photo Store",
-    "author": "Greg",
-    "screenshot_url": "greg-img_2761.jpg"
-  },
-
-  {
-    "name": "Module 3",
-    "author": "Sam",
-    "netlifyLink": "google.com",
+    "netlifyLink": "https://www.samys.com/",
     "gitHubLink": "github.com",
-    "extraFeatures": "",
-    "screenshot_url": "sam-screen shot 2021-09-29 at 8.35.28 pm.png"
-  },
-  {
-    "name": "ORANGE",
-    "author": "Sam",
-    "netlifyLink": "google.com",
-    "gitHubLink": "github.com",
-    "extraFeatures": "",
-    "screenshot_url": "sam-screenXshotX2021-09-29XatX8.29.48Xpm.png"
-  },
-  {
-    "name": "Helloo",
-    "author": "Sam",
-    "netlifyLink": "google.com",
-    "gitHubLink": "github.com",
-    "extraFeatures": "",
-    "screenshot_url": "sam-screenshot2021-09-29at8.35.28pm.png"
-  },
-  {
-    "name": "new",
-    "author": "Sam",
-    "netlifyLink": "google.com",
-    "gitHubLink": "github.com",
-    "extraFeatures": "",
-    "screenshot_url": "sam-screenshot2021-09-27at4.59.28pm.png"
-  },
-  {
-    "name": "newnewnew",
-    "author": "Sam",
-    "netlifyLink": "google.com",
-    "gitHubLink": "github.com",
-    "extraFeatures": "",
-    "screenshot_url": "sam-screenshot2021-09-27at4.59.28pm.png"
-  },
-  {
-    "name": "Sam S.",
-    "author": "Sam",
-    "netlifyLink": "google.com",
-    "gitHubLink": "github.com",
-    "extraFeatures": "",
-    "screenshot_url": "sam-screenshot2021-09-29at8.29.48pm.png"
+    "extraFeatures": "ai chat support",
+    "screenshot_url": "greg-screenshot2022-02-24at11.04.26pm.png"
   }
 ]

@@ -10,7 +10,7 @@ function NewForm() {
     author: "",
     netlifyLink: "",
     gitHubLink: "",
-    screenshot: {},
+    screenshot: "",
     extraFeatures: [],
   });
 
@@ -60,7 +60,15 @@ function NewForm() {
     const data = await response.json();
     console.log("data", data);
 
-    handleClose();
+    if (
+      info.name &&
+      info.author &&
+      info.netlifyLink &&
+      info.gitHubLink &&
+      info.screenshot
+    ) {
+      handleClose();
+    }
   };
 
   return (
@@ -96,6 +104,7 @@ function NewForm() {
               onChange={handleText}
               className="input"
               style={{ margin: 5 }}
+              required
             />
             <TextField
               id="author"
@@ -104,6 +113,7 @@ function NewForm() {
               onChange={handleText}
               className="input"
               style={{ margin: 5 }}
+              required
             />
             <TextField
               id="netlifyLink"
@@ -112,6 +122,7 @@ function NewForm() {
               onChange={handleText}
               className="input"
               style={{ margin: 5 }}
+              required
             />
             <TextField
               id="gitHubLink"
@@ -120,6 +131,7 @@ function NewForm() {
               onChange={handleText}
               className="input"
               style={{ margin: 5 }}
+              required
             />
             <TextField
               id="extraFeatures"
@@ -138,6 +150,7 @@ function NewForm() {
                 id="screenshot"
                 onChange={handleFile}
                 className="input"
+                required
               />
             </div>
             <Button
