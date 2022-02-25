@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Modal, Button, Typography, Box, TextField } from "@mui/material";
+import { useState } from "react";
+import { Modal, Button, Box, TextField } from "@mui/material";
 
 const { REACT_APP_API_URL } = process.env;
 
